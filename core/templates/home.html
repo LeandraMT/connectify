@@ -1,0 +1,133 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connectify Home</title>
+
+    <!-- Linking to CSS file -->
+    <link rel="stylesheet" href="{% static 'admin/css/home.css' %}" />
+</head>
+<body>
+    <section id="welcome-section">
+        <!-- Adding Aurora Background -->
+        <div class="wrapper">
+            <div class="base one"></div>
+            <div class="base two"></div>
+            <div class="base three"></div>
+        </div>
+        <div class="container">
+            <h1 class="heading">Connectify</h1>
+            <p class="intro">Savor the Experience Together!</p>
+        </div>
+
+        <div class="image-container">
+            <img src="{% static 'admin/img/main_bg.jpg' %}" alt="Food Event Trucks" style="max-width: 800px; max-height: 800px;">
+        </div>
+    </section>
+
+    <section id="about-section">
+        <div class="about-content">
+            <h1>Our Story</h1>
+            <h2><i>and</i> Mission</h2>
+            <div class="story-card">
+                <p><strong>Connectify</strong> started as a passion project by a group of food enthusiasts 
+                    who wanted to create a platform for people to come together and share 
+                    their love for culinary experiences. Recognizing the power of food to 
+                    bring people closer, they launched Connectify to host diverse food events, 
+                    ranging from intimate dinners to grand culinary festivals. Their mission 
+                    quickly evolved to not only celebrate great food but also foster meaningful 
+                    connections among attendees.<br><br> Through Connectify, people can meet new friends, 
+                    explore different cuisines, and create lasting memories, all centered around 
+                    the joy of sharing meals together.
+                </p>
+                <button class="read-more-btn">Read More</button>
+            </div>
+            <div class="mission-card">
+                <p>At <strong>Connectify</strong>, we believe that enjoying good food should go hand in hand with 
+                    maintaining a healthy lifestyle. Eating nutritious, well-balanced meals is 
+                    crucial for overall well-being, fueling our bodies and minds for daily activities. 
+                    Our events are designed to offer a diverse range of culinary options, ensuring 
+                    that visitors can indulge in delicious dishes without compromising on health.<br><br> 
+                    Additionally, we emphasize the importance of cultural exploration through food, 
+                    providing attendees with opportunities to taste and learn about cuisines from 
+                    around the world. By savoring these varied flavors, participants not only expand 
+                    their palates but also gain a deeper appreciation for the rich tapestry of global 
+                    culinary traditions.
+                </p>
+            </div>
+        </div>
+
+        <div class="about-images">
+            <img src="{% static 'admin/img/meeting_1.jpg' %}" alt="Image 1" style="max-width: 350px; max-height: 350px;">
+            <img src="{% static 'admin/img/meeting_2.jpg' %}" alt="Image 2" class="img-two" style="max-width: 350px; max-height: 350px;">
+            <img src="{% static 'admin/img/meeting_3.jpg' %}" alt="Image 3" class="img-three" style="max-width: 380px; max-height: 380px;">
+        </div>
+
+        <div class="mission-card-images">
+            <img src="{% static 'admin/img/mission-card_1.jpg' %}" alt="Image 1" style="max-width: 300px; max-height: 400px;">
+            <img src="{% static 'admin/img/mission-card_2.jpg' %}" alt="Image 2" class="img-two" style="max-width: 300px; max-height: 400px;">
+        </div>
+    </section>
+    
+
+
+    <section id="inspired-section">
+        <h1 class="inspired-heading">Get Inspired</h1>
+    
+        <div class="button-container">
+            <div class="button-div">
+                <form action="{% url 'event_list' %}">
+                    <button type="submit" class="btn">
+                        View Events
+                    </button>
+                </form>
+            </div>
+    
+            <div class="button-div">
+                <form action="{% url 'blog_post_list' %}">
+                    <button type="submit" class="btn">
+                        Check Out Our Articles and Gallery
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer id="footer-section">
+        <div class="footer-container">
+            <h2 class="footer-heading">Connectify</h2>
+            <p class="footer-rights">© 2024 Connectify. All rights reserved.</p>
+            <div class="footer-content">
+                <div class="footer-links">
+                    <h3>Links</h3>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Help Center Articles</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Developed by Leandra Magan-Tier</h3>
+                    <p>Follow me on:</p>
+                    <a href="https://github.com/LeandraMT" target="_blank">
+                        <img src="{% static 'admin/img/github.png' %}" alt="GitHub">
+                    </a>
+                    <a href="https://www.linkedin.com/in/leandra-magantier/" target="_blank">
+                        <img src="{% static 'admin/img/linkedin.png' %}" alt="LinkedIn">
+                    </a>
+                    <a href="https://your-portfolio.com" target="_blank">
+                        <img src="{% static 'admin/img/portfolio.png' %}" alt="Portfolio">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+
+    <!-- Link to JS file -->
+     <script src="{% static 'admin/js/index.js' %}"></script>
+</body>
+</html>

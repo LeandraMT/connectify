@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ blog_post.title }}</title>
+    <link rel="stylesheet" href="{% static 'admin/css/blogs.css' %}" />
+</head>
+<body>
+    <div class="blog-detail-container">
+        <h1>{{ blog_post.title }}</h1>
+        {% if blog_post.image %}
+            <img src="{{ blog_post.image.url }}" alt="{{ blog_post.title }}" class="blog-post-image">
+        {% endif %}
+
+        <div class="blog-content">
+            <p>{{ blog_post.content | safe }}</p>
+        </div>
+    </div>
+
+    <div class="back-btn">
+        <form action="{% url 'blog_post_list' %}">
+            <button type="submit" class="btn btn-back-btn">
+                Back to Blogs and Experiences
+            </button>
+        </form>
+    </div>
+</body>
+</html>

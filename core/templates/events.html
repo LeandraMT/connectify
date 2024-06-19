@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connectify Events</title>
+
+    <!-- Linking to CSS file -->
+    <link rel="stylesheet" href="{% static 'admin/css/events.css' %}" />
+</head>
+<body>
+    <section id="events-section">
+        <h1 class="events-heading">Upcoming Events</h1>
+        <div class="events-grid">
+            {% for event in events %}
+            <div class="event-card">
+                <div class="event-image">
+                    {% if event.event_image %}
+                        <img src="{{ event.event_image.url }}" alt="{{ event.event_name }}">
+                    {% endif %}
+                </div>
+
+                <div class="event-details">
+                    <h2>{{ event.event_name }}</h2>
+                    <p>{{ event.description }}</p>
+                    <p><strong>Date:</strong> {{ event.date }}</p>
+                    <p><strong>Time:</strong> {{ event.time }}</p>
+                    <p><strong>Location:</strong> {{ event.location }}</p>
+                    <form action="{% url 'menu_details' event.id %}">
+                        <button type="submit" class="btn">View the Menu Details</button>
+                    </form>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+
+        <div class="back-btn">
+            <form action="{% url 'home' %}">
+                <button type="submit" class="btn btn-back-btn">
+                    Back to Home
+                </button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
+

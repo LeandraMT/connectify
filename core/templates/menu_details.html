@@ -1,0 +1,72 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Connectify Menu Details</title>
+
+    <!-- Linking to CSS file -->
+    <link rel="stylesheet" href="{% static 'admin/css/events.css' %}" />
+    <!-- Linking to Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+<body>
+    <section id="details-section">
+        <h1 class="details-heading">Menu Details</h1>
+        <p class="details-p">Take a peek into what the menu will be for this event:</p>
+
+        <div class="vendor-name">
+            <h3>{{ event.menu.food_vendor }}</h3>
+        </div>
+        <div class="vendor-info">
+            <div class="vendor-image">
+                {% if event.menu.images %}
+                    <img src="{{ event.menu.images.url }}" alt="Menu Image" style="max-width: 450px; max-height: 450px;">
+                {% endif %}
+            </div>
+            <div class="vendor-p">
+                <p>{{ event.menu.description | safe }}</p>
+            </div>
+        </div>
+
+        <div class="nutritional-info">
+            <h2>Nutritional Information:</h2>
+            <p>{{ event.menu.nutritional_info | safe }}</p>
+        </div>
+
+        <div class="carousel">
+            {% if event.menu.menu_images.all %}
+                {% for image in event.menu.menu_images.all %}
+                    <div><img src="{{ image.image.url }}" alt="Menu Image" style="max-width: 400px; max-height: 500px;"></div>
+                {% endfor %}
+            {% endif %}
+        </div>
+
+        <div class="back-btn">
+            <form action="{% url 'event_list' %}">
+                <button type="submit" class="btn btn-back-btn">
+                    Back to Events
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Linking to Carousel JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 1,
+                adaptiveHeight: true
+            });
+        });
+    </script>
+</body>
+</html>

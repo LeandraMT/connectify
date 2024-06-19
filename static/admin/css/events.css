@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+    --white-100: white;
+    --green-200: #254336;
+    --gray-100: #F1F1F1;
+    --text-color: #0F0E0E;
+    --border-color: #ADFF2F;
+
+    /* aurora background colors */
+    --base-one: #FF6347;
+    --base-two: #FBF3D5;
+    --base-three: #ADFF2F;
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --btn-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-100);
+    font-family: "Lato", sans-serif;
+}
+
+
+
+/* EVENTS SECTION */
+#events-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.events-heading {
+    font-size: 38px;
+    text-align: center;
+    margin: 50px;
+    color: var(--green-200);
+}
+
+.events-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.event-card {
+    background-color: var(--white-100);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 8px;
+    border-radius: 12px;
+}
+
+.event-details {
+    padding: 20px;
+}
+
+.event-details h2 {
+    font-size: 22px;
+    color: var(--text-color);
+    margin-bottom: 10px;
+}
+
+.event-details p {
+    margin-bottom: 10px;
+    color: var(--text-color);
+}
+
+.btn {
+    background-color: var(--green-200);
+    color: var(--white-100);
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: box-shadow 0.3s, transform 0.3s;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+
+/* MENU DETAILS SECTION */
+#details-section {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.details-heading {
+    font-size: 38px;
+    text-align: center;
+    margin: 50px;
+    color: var(--green-200);
+}
+
+.details-p {
+    margin-bottom: 20px;
+    font-size: 18px;
+}
+
+.vendor-name {
+    margin-top: 12%;
+    margin-bottom: 30px;
+}
+
+.vendor-name > h3 {
+    font-size: 20px;
+    color: var(--green-200);
+    font-style: italic;
+}
+
+.vendor-info {
+    min-height: 80vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.vendor-image {
+    width: 30%;
+    text-align: left;
+}
+
+.vendor-image > img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 22px;
+}
+
+.vendor-p {
+    width: 50%;
+}
+
+.vendor-p > p {
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text-color);
+}
+
+.nutritional-info {
+    min-height: 40vh;
+    position: relative;
+    overflow: hidden;
+    margin-top: 30px;
+}
+
+.nutritional-info h2 {
+    text-align: center;
+    color: var(--green-200);
+    margin-bottom: 50px;
+}
+
+.nutritional-info p {
+    font-size: 17px;
+    line-height: 30px;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* Carousel */
+.carousel {
+    max-width: 80%;
+    margin: 0 auto;
+    min-height: 50vh;
+}
+
+.carousel img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+}
+
+.back-btn {
+    float: right;
+    margin: 20px;
+}
+
+.btn-back-btn {
+    transition: background-color 0.4s ease;
+}
+
+.btn-back-btn:hover {
+    background-color: var(--border-color);
+    color: var(--text-color);
+}
