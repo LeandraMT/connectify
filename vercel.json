@@ -1,4 +1,5 @@
 {
+    "version": 2,
     "builds": [
       {
         "src": "connectify/wsgi.py",
@@ -9,12 +10,14 @@
       }
     ],
     "routes": [
-      {
-        "src": "/(.*)",
-        "dest": "connectify/wsgi.py"
-      }
+      { "src": "/static/(.*)", "dest": "/static/$1" },
+      { "src": "/media/(.*)", "dest": "/media/$1" },
+      { "src": "/(.*)", "dest": "connectify/wsgi.py" }
     ],
-    "buildCommand": "pip install -r requirements.txt && python manage.py collectstatic --noinput && python manage.py migrate",
-    "outputDirectory": "staticfiles"
+    "env": {
+      "DJANGO_SETTINGS_MODULE": "connectify.settings",
+      "DJANGO_SECRET_KEY": "django-insecure-0*!evtm*)o440dik0z)(g_#mux1doxa68&tp@(6lze*&tn&bj1"
+    }
   }
+  
   
