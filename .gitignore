@@ -2,3 +2,4 @@
 .idea
 env
 manage.py
+.vercel
