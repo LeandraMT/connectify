@@ -14,7 +14,7 @@ SECRET_KEY = 'django-insecure-0*!evtm*)o440dik0z)(g_#mux1doxa68&tp@(6lze*&tn&bj1
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['connectify.vercel.app']
+ALLOWED_HOSTS = ['connectify-lovat-gamma.vercel.app']
 
 
 # Application definition
