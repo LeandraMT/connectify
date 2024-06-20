@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "buildCommand": [
+    "builds": [
     {
       "src": "connectify/wsgi.py",
       "use": "@vercel/python",
