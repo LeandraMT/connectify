@@ -1,0 +1,11 @@
+.env
+*.pyc
+__pycache__/
+.git/
+.gitignore
+.vscode/
+.vercel/
+node_modules/
+tests/
+.idea
+env
