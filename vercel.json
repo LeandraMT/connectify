@@ -1,14 +1,5 @@
 {
     "version": 2,
-    "builds": [
-      {
-        "src": "connectify/wsgi.py",
-        "use": "@vercel/python",
-        "config": {
-          "maxLambdaSize": "50mb"
-        }
-      }
-    ],
     "routes": [
       { "src": "/static/(.*)", "dest": "/static/$1" },
       { "src": "/media/(.*)", "dest": "/media/$1" },
