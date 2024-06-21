@@ -9,14 +9,15 @@
 
     <!-- Linking to CSS file -->
     <link rel="stylesheet" href="{% static 'admin/css/events.css' %}" />
+    <link rel="stylesheet" href="{% static 'admin/css/responsive.events.css' %}">
     <!-- Linking to Carousel CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
 </head>
 <body>
     <section id="details-section">
-        <h1 class="details-heading">Menu Details</h1>
-        <p class="details-p">Take a peek into what the menu will be for this event:</p>
+        <h1 class="details-heading">Event Details</h1>
+        <p class="details-p">Get a glimpse of what to expect at this event:</p>
 
         <div class="vendor-name">
             <h3>{{ event.menu.food_vendor }}</h3>

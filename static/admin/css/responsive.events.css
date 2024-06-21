@@ -1,0 +1,229 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+    --white-100: white;
+    --green-200: #254336;
+    --text-color: #0F0E0E;
+    --border-color: #ADFF2F;
+
+    /* aurora background colors */
+    --base-one: #FF6347;
+    --base-two: #FBF3D5;
+    --base-three: #ADFF2F;
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --btn-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-100);
+    font-family: "Lato", sans-serif;
+}
+
+
+@media screen and (max-width: 480px) {
+    /* DETAILS SECTION */
+    #details-section {
+        padding: 20px;
+        max-width: 100%;
+        margin: 0 auto;
+    }
+    
+    .details-heading {
+        font-size: 28px;
+        text-align: center;
+        margin: 30px 0;
+        color: var(--green-200);
+    }
+    
+    .details-p {
+        margin-bottom: 20px;
+        font-size: 16px;
+    }
+    
+    .vendor-name {
+        margin-top: 10%;
+        margin-bottom: 20px;
+        text-align: left;
+    }
+    
+    .vendor-name > h3 {
+        font-size: 20px;
+        color: var(--green-200);
+    }
+    
+    .vendor-info {
+        flex-direction: column; 
+        align-items: center;
+    }
+    
+    .vendor-image {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    
+    .vendor-image > img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 16px;
+    }
+    
+    .vendor-p {
+        width: 80%;
+        text-align: center;
+    }
+    
+    .vendor-p > p {
+        font-size: 16px;
+        line-height: 26px;
+        color: var(--text-color);
+    }
+
+
+    /* NUTRITIONAL INFO AND CAROUSEL */
+    .nutritional-info {
+        min-height: auto;
+        margin-top: 40px;
+        padding: 10px;
+    }
+    
+    .nutritional-info h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+    
+    .nutritional-info p {
+        font-size: 16px;
+        line-height: 24px; 
+        text-align: left; 
+    }
+    
+    .carousel {
+        max-width: 90%; 
+        margin: 20px auto;
+        min-height: auto;
+    }
+    
+    .carousel img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Back Button */
+    .back-btn {
+        float: none;
+        text-align: center; 
+        margin: 20px auto;
+    }
+    
+    .btn-back-btn {
+        padding: 10px 20px; 
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* DETAILS SECTION */
+    #details-section {
+        padding: 10px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .details-heading {
+        font-size: 30px;
+        margin: 30px 10px; 
+    }
+
+    .details-p {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+
+    .vendor-name {
+        margin-top: 8%; 
+        margin-bottom: 20px; 
+    }
+
+    .vendor-name > h3 {
+        font-size: 18px;
+    }
+
+    .vendor-info {
+        min-height: auto;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .vendor-image {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .vendor-image > img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .vendor-p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .vendor-p > p {
+        font-size: 16px; 
+        line-height: 26px;
+    }
+
+    /* NUTRITIONAL INFO AND CAROUSEL */
+    .nutritional-info {
+        min-height: auto; 
+        margin-top: 30px; 
+        padding: 10px; 
+    }
+
+    .nutritional-info h2 {
+        font-size: 24px; 
+        margin-bottom: 30px; 
+    }
+
+    .nutritional-info p {
+        font-size: 16px;
+        line-height: 24px; 
+        text-align: left;
+    }
+
+    .carousel {
+        max-width: 90%;
+        margin: 20px auto; 
+        min-height: auto;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Back Button */
+    .back-btn {
+        text-align: center; 
+        margin: 20px auto;
+    }
+
+    .btn-back-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+}
