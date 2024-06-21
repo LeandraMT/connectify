@@ -17,6 +17,7 @@ SECRET_KEY = os.getenv('DJANGO_SECRET_KEY', 'django-insecure-0*!evtm*)o440dik0z)
 DEBUG = os.getenv('DEBUG', '') == 'False'
 
 ALLOWED_HOSTS = ['devleandra.pythonanywhere.com', '127.0.0.1']
+CSRF_TRUSTED_ORIGINS = ['https://devleandra.pythonanywhere.com']
 
 
 # Application definition
