@@ -9,3 +9,4 @@ node_modules/
 tests/
 .idea
 env
+db.sqlite3
