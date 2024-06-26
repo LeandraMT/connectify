@@ -57,15 +57,4 @@ body {
     .read-more {
         display: inline-block;
     }
-
-
-    /* THE EXPERIENCE SECTION */
-    .experiences-carousel {
-        min-height: 350px;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        text-align: center;
-    }
 }
