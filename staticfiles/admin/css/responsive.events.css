@@ -227,3 +227,100 @@ body {
     }
 
 }
+
+@media screen and (min-width: 769px) and (max-width: 955px) {
+    /* DETAILS SECTION */
+    #details-section {
+        padding: 10px;
+        max-width: 100%; 
+        margin: 0 auto;
+    }
+
+    .details-heading {
+        font-size: 30px;
+        margin: 30px 10px; 
+    }
+
+    .details-p {
+        font-size: 16px; 
+        margin-bottom: 10px; 
+    }
+
+    .vendor-name {
+        margin-top: 8%; 
+        margin-bottom: 20px; 
+    }
+
+    .vendor-name > h3 {
+        font-size: 18px;
+    }
+
+    .vendor-info {
+        min-height: auto;
+        flex-direction: column; 
+        align-items: center;
+    }
+
+    .vendor-image {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .vendor-image > img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+    }
+
+    .vendor-p {
+        width: 80%;
+        text-align: center;
+    }
+
+    .vendor-p > p {
+        font-size: 16px; 
+        line-height: 26px;
+    }
+
+    /* NUTRITIONAL INFO AND CAROUSEL */
+    .nutritional-info {
+        min-height: auto; 
+        margin-top: 30px; 
+        padding: 10px; 
+    }
+
+    .nutritional-info h2 {
+        font-size: 24px; 
+        margin-bottom: 30px; 
+    }
+
+    .nutritional-info p {
+        font-size: 16px;
+        line-height: 24px; 
+        text-align: left;
+    }
+
+    .carousel {
+        max-width: 90%;
+        margin: 20px auto; 
+        min-height: auto;
+    }
+
+    .carousel img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    /* Back Button */
+    .back-btn {
+        text-align: center; 
+        margin: 20px auto;
+    }
+
+    .btn-back-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}

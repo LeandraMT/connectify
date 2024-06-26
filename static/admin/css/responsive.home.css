@@ -129,8 +129,7 @@ body {
     .mission-card-images > .img-two {
         margin-left: 0;
     }
-
-    
+  
     .mission-card-images {
         display: none;
     }
@@ -262,14 +261,18 @@ body {
     #about-section {
         max-width: 100%;
         width: 100%;
-        margin: 15% auto;
-        padding: 15px;
+        margin: 10% auto;
+        padding: 10px;
         text-align: center;
-        display: block;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     
     .about-content {
         width: 100%;
+        margin-bottom: 20px;
         text-align: center;
     }
     
@@ -282,14 +285,14 @@ body {
     }
     
     .about-images {
-        width: 100%; 
+        width: 80%; 
         display: flex;
         flex-direction: column;
         align-items: center;
     }
     
     .about-images img {
-        max-width: 80%;
+        max-width: 100%;
         height: auto;
         border-radius: 12px;
         margin-bottom: 10px;
@@ -306,8 +309,8 @@ body {
 
     .story-card,
     .mission-card {
+        margin: 20px;
         padding: 15px;
-        margin: 30px;
         font-size: 18px;
         line-height: 28px;
     }
@@ -324,6 +327,90 @@ body {
         height: auto;
         border-radius: 16px;
         margin-bottom: 10px;
+    }
+
+    .mission-card-images > .img-two {
+        margin-left: 0;
+    }
+
+    .mission-card-images {
+        display: none;
+    }
+
+    .read-more-btn {
+        margin-top: 20px;
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 955px) {
+    #about-section {
+        max-width: 100%;
+        width: 100%;
+        margin: 10% auto;
+        padding: 10px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .about-content {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .about-content h1, .about-content h2 {
+        font-size: 32px;
+        margin-left: 0;
+    }
+
+    .about-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-images img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        margin-bottom: 10px;
+    }
+
+    .about-images > .img-two {
+        margin-left: 0;
+    }
+
+    .about-images > .img-three {
+        margin-top: 10px;
+        margin-left: 0;
+    }
+
+    .story-card,
+    .mission-card {
+        margin: 20px;
+        padding: 15px;
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .mission-card-images {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-card-images img {
+        max-width: 80%;
+        height: auto;
+        border-radius: 10px;
+        margin-bottom: 20px;
     }
 
     .mission-card-images > .img-two {

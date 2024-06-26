@@ -8,6 +8,7 @@
     <title>Connectify Blogs and Posts</title>
     <!-- Linking CSS Styles -->
     <link rel="stylesheet" href="{% static 'admin/css/blogs.css' %}" />
+    <link rel="stylesheet" href="{% static 'admin/css/responsive.blogs.css' %}" />
 
     <!-- Linking to Carousel Effect and FontAwesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
@@ -43,7 +44,7 @@
                     <i class="fas fa-comment"></i>
                     <p>{{ item.content | safe }}</p>
                 </div>
-
+                
                 <div class="additional-images-carousel">
                     {% for image in item.blog_post_images.all %}
                         <img src="{{ image.image.url }}" alt="{{ item.title }}" class="additional_images"

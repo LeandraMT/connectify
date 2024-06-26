@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+
+:root {
+    --white-100: white;
+    --green-200: #254336;
+    --gray-100: #F1F1F1;
+    --text-color: #0F0E0E;
+    --border-color: #ADFF2F;
+
+    /* aurora background colors */
+    --base-one: #FF6347;
+    --base-two: #FBF3D5;
+    --base-three: #ADFF2F;
+
+    --box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    --btn-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white-100);
+    font-family: "Lato", sans-serif;
+}
+
+
+@media screen and (min-width: 769px) and (max-width: 955px) {
+    /* BLOGS SECTION */
+    .blog-card {
+        min-height: 350px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Centering Titles */
+    h1 {
+        text-align: center;
+        margin: 30px;
+    }
+
+    .blog-card p {
+        display: none;
+    }
+
+    .blog-card img {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .read-more {
+        display: inline-block;
+    }
+}
